@@ -1,3 +1,4 @@
 test row1
 test row2
 test row3
+line 4
