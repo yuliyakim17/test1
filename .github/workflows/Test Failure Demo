@@ -1,0 +1,17 @@
+name: Test Failure Demo
+
+on:
+  workflow_dispatch:
+
+jobs:
+  autotests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Start tests
+        run: echo "Running tests..."
+
+      - name: Failed test
+        run: |
+          echo "Login test failed"
+          exit 1
