@@ -1,0 +1,15 @@
+name: QA Practice
+
+on:
+  workflow_dispatch:
+
+jobs:
+  autotests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print message
+        run: echo "Autotests started"
+
+      - name: Run fake test
+        run: echo "All tests passed"
