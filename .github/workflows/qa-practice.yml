@@ -1,2 +1,9 @@
-- name: Run fake test
-  run: exit 1
+name: QA Practice
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: Environment
+        required: true
+        default: qa
