@@ -1,0 +1,20 @@
+name: Failed Pipeline
+
+on:
+  workflow_dispatch:
+
+jobs:
+  autotests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Start
+        run: echo "Pipeline started"
+
+      - name: Simulate failed test
+        run: |
+          echo "Login test failed"
+          exit 1
+
+      - name: Finish
+        run: echo "This step will not run"
